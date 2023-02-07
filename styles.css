@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.grid-div {
+  border: solid 1px;
+  border-color: black;
+}
+
+.main-container {
+  margin: auto;
+  height: 960px;
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  border: solid 4px;
+  border-color: black;
+  background-color: white;
+  border-radius: 1%;
+}
+
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4 {
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+}
