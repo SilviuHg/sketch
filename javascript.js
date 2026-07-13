@@ -2,7 +2,7 @@ const mainContainer = document.querySelector(".main-container");
 const button1 = document.querySelector(".btn-1");
 const button2 = document.querySelector(".btn-2");
 
-// INITIALIZE DEFAULT GRID 16x16
+// INITIALIZE DEFAULT GRID 16x16.
 for (let i = 1; i <= 256; i++) {
   const divs = document.createElement("div");
   divs.className = "grid-div";
@@ -12,7 +12,7 @@ for (let i = 1; i <= 256; i++) {
   });
 }
 
-// REMOVE PREVIOUS GRID AFTER SELECTING NEW SIZE GRID
+// REMOVE PREVIOUS GRID AFTER SELECTING NEW SIZE GRID.
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
